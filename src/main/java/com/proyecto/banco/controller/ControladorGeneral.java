@@ -6,19 +6,19 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+@Controller
 public class ControladorGeneral {
 
-    @Controller
 
-    public class controladorGeneral {
-
-        @RequestMapping
-        @ResponseBody
-
-        public ResponseEntity<String> Saludar() {
-            return new ResponseEntity<>("Mama estoy triunfando, hice mi primera pagina web con Spring Boot", HttpStatus.OK);
-        }
+    @RequestMapping
+    @ResponseBody
+    public ResponseEntity<String> saludar(){
+        return new ResponseEntity<>(" ;D Mama estoy triunfando, hice mi primera pagina web con Spring Boot" , HttpStatus.OK);
     }
+
 }
+
+
+
 
 
